@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DesafioAtletasJava/DesafioAtletasJava.iml" filepath="$PROJECT_DIR$/DesafioAtletasJava/DesafioAtletasJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesafioBarOO/DesafioBarOO.iml" filepath="$PROJECT_DIR$/DesafioBarOO/DesafioBarOO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesafioImpostoJava/DesafioImpostoJava.iml" filepath="$PROJECT_DIR$/DesafioImpostoJava/DesafioImpostoJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExeCap07/ExeCap07.iml" filepath="$PROJECT_DIR$/ExeCap07/ExeCap07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+    </modules>
+  </component>
+</project>

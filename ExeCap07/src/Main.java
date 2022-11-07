@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Enter account number: ");
         int number = sc.nextInt();
         System.out.println("Enter account holder: ");
-        String holder = sc.next();
+        String holder = sc.nextLine();
         System.out.println("Is there any initial deposit (y/n)? ");
         char response = sc.next().charAt(0);
         if (response == 'y'){
