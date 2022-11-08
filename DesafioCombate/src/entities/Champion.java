@@ -6,9 +6,6 @@ public class Champion {
     private int attack;
     private int armor;
 
-    public String getName() {
-        return name;
-    }
     public void setName(String name) {
         this.name = name;
     }
@@ -21,16 +18,8 @@ public class Champion {
         this.life = life;
     }
 
-    public int getAttack() {
-        return attack;
-    }
-
     public void setAttack(int attack) {
         this.attack = attack;
-    }
-
-    public int getArmor() {
-        return armor;
     }
 
     public void setArmor(int armor) {
@@ -58,7 +47,6 @@ public class Champion {
         }
     }
 
-    //life < 0 ? 0 : life; como jogar esse expressao no code??
     public String status() {
         if (life > 0) {
             return name + ": " +
