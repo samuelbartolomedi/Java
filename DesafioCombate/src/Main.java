@@ -34,13 +34,18 @@ public class Main {
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++){
+            if (c1.getLife() <= 0 || c2.getLife() <= 0) {
+                break;
+            } else {
             System.out.println();
             System.out.println("Resultado do turno " + i + ":");
             c1.takeDamage(c2);
             c2.takeDamage(c1);
             System.out.println(c1.status());
             System.out.println(c2.status());
+            }
         }
+
         System.out.println();
         System.out.println("FIM DE COMBATE");
     }

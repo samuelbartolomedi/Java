@@ -6,7 +6,7 @@ public class Champion {
     private int attack;
     private int armor;
 
-    private String getName() {
+    public String getName() {
         return name;
     }
     public void setName(String name) {
@@ -51,8 +51,14 @@ public class Champion {
         } else {
             life = life - 1;
         }
+        if (life < 0){
+            life = 0;
+        } else {
+            life = life;
+        }
     }
-    //t < 0 ? 0 : t; como jogar esse expressao no code??
+
+    //life < 0 ? 0 : life; como jogar esse expressao no code??
     public String status() {
         if (life > 0) {
             return name + ": " +
