@@ -14,7 +14,7 @@ public class Main {
         double[] alturas = new double[n];
 
         for (int i = 0; i < n; i++){
-            System.out.println("Dados da " + i + 1 +" pessoa: " );
+            System.out.printf("Dados da %da pessoa:\n", i + 1);
             System.out.println("Nome: ");
             nomes[i] = sc.next();
             System.out.println("Idade: ");
@@ -26,7 +26,8 @@ public class Main {
         double alturaTotal = 0;
         double alturaMedia = 0;
         double percentualMenores = 0;
-        for (int i = 0; i > n; i++){
+
+        for (int i = 0; i < n; i++){
             if (idades[i] < 16) {
                 numeroMenores++;
             }
@@ -36,9 +37,13 @@ public class Main {
         alturaMedia = alturaTotal / n;
         percentualMenores = ((double) numeroMenores / n) * 100;
 
-        System.out.println("Pessoas com menos de 16 anos: " + percentualMenores);
-        for (int i = 0; i > n; i++){
-            System.out.
+        System.out.printf("\nAltura média: %.2f\n", alturaMedia);
+        System.out.printf("Pessoas com menos de 16 anos: %.1f%%\n", percentualMenores);
+        for (int i = 0; i < n; i++){
+            if(idades[i] < 16) {
+                System.out.printf("%s\n", nomes[i]);
+            }
         }
+        sc.close();
     }
 }
