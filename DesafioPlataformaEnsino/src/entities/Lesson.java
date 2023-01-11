@@ -1,6 +1,6 @@
 package entities;
 
-abstract class Lesson {
+public abstract class Lesson {
     private String title;
 
     public Lesson(String title) {

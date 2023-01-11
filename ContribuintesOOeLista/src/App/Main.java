@@ -31,8 +31,8 @@ public class Main {
             double educationSpending = sc.nextDouble();
             taxPayerList.add(new TaxPayer(salaryIncome, servicesIncome, capitalIncome, healthSpending, educationSpending));
         }
-        System.out.println();
 
+        System.out.println();
         for (TaxPayer obj : taxPayerList) {
                 System.out.print("Resumo do contribuinte:");
                 System.out.println();
