@@ -62,6 +62,11 @@ public class Sale {
 
     @Override
     public String toString(){
-        return getMonth()+ "/" + getYear() + ", " + getItems() + ", " + getTotal() + ", " + "pm = " + averagePrice();
+        return getMonth() +
+                "/" + getYear() +
+                ", " + getSeller() +
+                ", " + getItems() +
+                ", " + getTotal() +
+                ", " + "pm = " + String.format("%.2f", averagePrice());
     }
 }
