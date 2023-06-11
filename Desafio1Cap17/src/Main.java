@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.stream.Collectors;
+import java.util.stream.Collectors; //outra forma de escrita para o ToList, descobrir diferencas
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +21,7 @@ public class Main {
             String lines = br.readLine();
             while (lines != null)
             {
+                //vetor matriz
                 String[] fields = lines.split(",");
                 salesList.add(new Sale(Integer.parseInt(fields[0]), Integer.parseInt(fields[1]), fields[2], Integer.parseInt(fields[3]), Double.parseDouble(fields[4])));
                 lines = br.readLine();
@@ -33,6 +34,9 @@ public class Main {
             firstFiveSales.forEach(System.out::println);
             System.out.println();
 
+            //parecido com o context, operações no java são estranhas
+            // .filter é o where usando equals, uso o id...
+            // no reduce passo um valor pro default e o map seria um função (chamo o getTotal que me trás o total
             Double somaVendasLogan = salesList.stream()
                                             .filter(x -> x.getSeller().equals("Logan") && x.getMonth().equals(1)
                                                     || x.getSeller().equals("Logan") && x.getMonth().equals(7))
