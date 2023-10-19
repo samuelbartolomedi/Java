@@ -27,5 +27,5 @@ public class Desafio01Cap08Application {
         System.out.println("Informe o desconto do pedido:");
         Double discount = sc.nextDouble();
     }
-
+//teste
 }
