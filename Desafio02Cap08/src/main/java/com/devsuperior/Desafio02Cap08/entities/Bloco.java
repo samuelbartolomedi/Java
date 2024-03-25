@@ -9,30 +9,30 @@ import java.time.Instant;
 public class Bloco {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Long id;
+    @Column(columnDefinition = "TIMESTAMP WITH TIME ZONE")
     private Instant inicio;
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    @Column(columnDefinition = "TIMESTAMP WITH TIME ZONE")
     private Instant fim;
-    @OneToOne
-    @MapsId
+    @ManyToOne
+    @JoinColumn(name = "atividade_id")
     private Atividade atividade;
 
     public Bloco() {
     }
 
-    public Bloco(Integer id, Instant inicio, Instant fim, Atividade atividade) {
+    public Bloco(Long id, Instant inicio, Instant fim, Atividade atividade) {
         this.id = id;
         this.inicio = inicio;
         this.fim = fim;
         this.atividade = atividade;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
